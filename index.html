@@ -33,6 +33,23 @@
 
 <!-- Build your app here-->
 <h2>Hello <span id="my-name">Tom</span>!</h2>
-
+<button id="change name" onclick="myFunction()">Name?</button>
+<script>
+    function myFunction() {
+    var person = prompt("Please enter your name", "Batman");
+    if(person != null) {
+    document.getElementById("my-name").innerHTML = person;
+    }
+}
+</script>
+<button id="change colour" onclick="colourFunction()">Colour?</button>
+<script>
+    function colourFunction(){
+    var colour = prompt("Please pick your favourite colour!", "pink");
+    if(colour != null) {
+    document.getElementById("my-name").style.color = colour;
+    }
+}
+</script>
 </body>
 </html>
